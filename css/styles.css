@@ -1,0 +1,106 @@
+html {
+	width: 100%;
+}
+
+body {
+	font-family: sans-serif;
+	color: #fff;	
+}
+
+h1 {
+	padding: 5em 0;
+}
+
+p {
+	color: #333;
+}
+
+.wrapper {
+	margin: 0 auto;
+	text-align: center;
+}
+
+/**************
+Animations
+*************/
+
+@keyframes fadeInLeft {
+	0% {
+		opacity: 0;
+		left: -500px;
+		background: firebrick;
+	}
+
+	100% {
+		opacity: 1;
+		left: 0;
+		background: steelblue;
+	}
+}
+/*Fade in from the right*/
+@keyframes fadeInRight {
+	0% {
+		opacity: 0;
+		right: -500px;
+		background: orange;
+	}
+
+	100% {
+		opacity: 1;
+		right: 0;
+		background: lightblue;
+	}
+}
+
+/*Fade out to the left */
+@keyframes fadeOutLeft {
+	0% {
+		opacity: 1;
+		left: 0px;
+		background: steelblue;
+	}
+
+	100% {
+		opacity: 0;
+		left: -500px;
+		background: firebrick;
+	}
+}
+
+/*Fade out to the right*/
+@keyframes fadeOutRight {
+	0% {
+		opacity: 1;
+		right: 0;
+		background: lightblue;
+	}
+
+	100% {
+		opacity: 0;
+		right: -500px;
+		background: orange;
+	}
+}
+
+/**************
+run animation classes
+*************/
+.run-fadeInLeft {
+	position: relative;
+	animation: fadeInLeft 2s ease forwards;
+}
+
+.run-fadeInRight {
+	position: relative;
+	animation: fadeInRight 2s ease forwards;
+}
+
+.run-fadeOutLeft {
+	position: relative;
+	animation: fadeOutLeft 2s ease forwards;
+}
+
+.run-fadeOutRight {
+	position: relative;
+	animation: fadeOutRight 2s ease forwards;
+}
